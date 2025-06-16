@@ -1,0 +1,93 @@
+.actor-profile-wrapper {
+  width: 100vw;
+  height: 97.7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actor-profile-container {
+
+  justify-content: center;
+
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 420px;
+  width: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 32px;
+  position: relative;
+
+}
+
+.actor-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.actor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0 0 12px 0;
+  color: #e0e0e0;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .actor-profile-container {
+    padding: 20px 5px;
+    gap: 30px;
+    max-width: 95vw;
+  }
+  .actor-photo {
+    width: 120px;
+    height: 170px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+.back-btn {
+  position: absolute;
+  left: 150px;
+  bottom: 100px;
+  background: #a4161a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #6d0f12;
+}

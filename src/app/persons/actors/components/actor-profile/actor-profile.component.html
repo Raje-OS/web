@@ -1,0 +1,18 @@
+<div class="actor-profile-wrapper">
+  <div class="actor-profile-container" style="position: relative; flex-direction: row; align-items: flex-start;">
+
+    <ng-template #placeholder>
+      <div class="actor-placeholder">
+        <span>?</span>
+      </div>
+    </ng-template>
+    <div class="actor-info">
+      <img src= "{{actor?.imagen}}" alt="Imagen de prueba" class="actor-image" />
+      <h1>Nombre: {{actor?.nombre}} </h1>
+      <h2>Edad: {{actor?.edad}} </h2>
+      <p>Descripcion: {{actor?.descripcion}} </p>
+    </div>
+
+  </div>
+  <button class="back-btn" routerLink="/foryou">Volver a Para Ti</button>
+</div>
